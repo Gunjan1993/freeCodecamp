@@ -1,0 +1,54 @@
+body{
+    background-color: #f5f6f7;
+    text-align: center;
+    
+}
+.homepage{
+   
+    font-family: Lato;
+    text-align: left;
+    max-width: 800px;
+   margin-left: 450px;
+    
+}
+@font-face {
+    font-family: Lato;
+    src: url(../Lato-SemiBold.ttf);
+}
+.getstarted{
+    width: 500px;
+    padding: 20px 0px;
+    background-image: linear-gradient(#feac32,#fec143);
+    border: 4px solid #feac32;
+   padding: 5px;
+   font-size: 25px;
+   margin-left: 90px;
+}
+.getstarted:hover{
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    background-color: #fec143;
+    box-shadow: 2px 2px 2px grey;
+    border: 2px solid #feac32;
+}
+h1{
+    line-height: 2;
+}
+.firstline{
+    padding-top: 80px
+}
+.icons{
+    display: flex;
+    list-style: none;
+   
+    margin-left: -60px;
+}
+.icons li{
+    padding: 10px 30px;
+    font-size: 25px;
+    color: #737372;
+   
+}
+li img{
+    width: 40px;
+}
