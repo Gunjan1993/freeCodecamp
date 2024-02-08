@@ -15,7 +15,7 @@ function Content() {
   const[auth2,setAuth2]=useState(false)
   axios.defaults.withCredentials=true
   useEffect(()=>{
-axios.get('http://localhost:3001/content').then(
+axios.get('https://free-codecamp-blond.vercel.app/content').then(
   result=>{console.log(result)
   if(result.data=="Success"){
     setAuth2(true)
