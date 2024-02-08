@@ -24,7 +24,7 @@ axios.get('http://localhost:3001/content').then(
 .catch(err=>console.log(err))
 
 
-axios.get('http://localhost:3001/getUsers')
+axios.get('https://free-codecamp-blond.vercel.app/getUsers')
 .then(courses=>{setCourses(courses.data);
 console.log(courses.data)}
 )
