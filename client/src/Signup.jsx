@@ -20,7 +20,7 @@ function Signup(){
         setformErrors(validate(userReg))
         window.localStorage.setItem("isLogedIn",true)
         
-        axios.post('http://localhost:3001/register', {name,email,password})
+        axios.post('https://free-codecamp-blond.vercel.app/register', {name,email,password})
         .then(result=>{console.log(result)
             if(result.data==="This email already exits!"){
                 navigate('/register')
