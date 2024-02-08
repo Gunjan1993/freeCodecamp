@@ -16,7 +16,7 @@ app.use(cors({
 }))
 app.use(cookieParser())
 
-mongoose.connect("mongodb+srv://gunjangyl99:sensation@cluster0.xbrqbfi.mongodb.net/test?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://gunjangyl99:sensation@cluster0.xbrqbfi.mongodb.net/?retryWrites=true&w=majority")
 
 
 // const getList=async ()=>{
