@@ -10,7 +10,7 @@ const CourseModel=require("./models/Course")
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin:['http://localhost:5173'],
+    origin:['https://free-codecamp-frontend.vercel.app/'],
     methods:["GET","POST"],
     credentials:true
 }))
@@ -51,6 +51,9 @@ app.get('/content',verifyUser,(req,res)=>{
 return res.json("Success")
 })
 
+app.get('/',(req,res)=>{
+return res.json('Works')
+})
 
 
 app.post("/register", (req,res)=>{
