@@ -15,7 +15,7 @@ function Content() {
   const[auth2,setAuth2]=useState(false)
   axios.defaults.withCredentials=true
   useEffect(()=>{
-axios.get('https://free-codecamp-blond.vercel.app/content').then(
+axios.get('https://freecodecamp-v7nt.onrender.com/content').then(
   result=>{console.log(result)
   if(result.data=="Success"){
     setAuth2(true)
@@ -24,7 +24,7 @@ axios.get('https://free-codecamp-blond.vercel.app/content').then(
 .catch(err=>console.log(err))
 
 
-axios.get('https://free-codecamp-blond.vercel.app/getUsers')
+axios.get('https://freecodecamp-v7nt.onrender.com/getUsers')
 .then(courses=>{setCourses(courses.data);
 console.log(courses.data)}
 )
