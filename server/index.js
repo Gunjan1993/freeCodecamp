@@ -16,7 +16,7 @@ const corsConfig={
     credentials:true
 }
 app.use(cors(corsConfig));
-app.options("",(corsConfig))
+//app.options("",(corsConfig))
 app.use(cookieParser())
 
 mongoose.connect("mongodb+srv://gunjangyl99:sensation@cluster0.xbrqbfi.mongodb.net/?retryWrites=true&w=majority")
