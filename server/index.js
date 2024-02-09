@@ -9,11 +9,14 @@ const CourseModel=require("./models/Course")
 
 const app = express()
 app.use(express.json())
-app.use(cors({
-    origin:['https://free-codecamp-frontend.vercel.app/'],
-    methods:["GET","POST"],
+
+const corsConfig={
+     origin:['https://free-codecamp-frontend.vercel.app/'],
+    methods:["GET","POST","PUT","DELETE"],
     credentials:true
-}))
+}
+app.use(cors(corsConfig));
+app.options("",(corsConfig))
 app.use(cookieParser())
 
 mongoose.connect("mongodb+srv://gunjangyl99:sensation@cluster0.xbrqbfi.mongodb.net/?retryWrites=true&w=majority")
