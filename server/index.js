@@ -12,7 +12,7 @@ app.use(express.json())
 
 const corsConfig={
      origin:['https://free-codecamp-frontend.vercel.app/'],
-    methods:["GET","POST","PUT","DELETE"],
+    methods:["GET","POST","PUT","DELETE","OPTIONS"],
     credentials:true
 }
 app.use(cors(corsConfig));
