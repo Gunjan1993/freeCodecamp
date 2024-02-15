@@ -2,12 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import './page2.css'
 import { NavLink } from 'react-router-dom'
-import respnsive from './assets/responsive.png'
-import quality from './assets/quality.png'
-import js from './assets/js.png'
-import atom from './assets/atom.png'
-import db from './assets/db.png'
-import server from './assets/server.png'
 import axios from 'axios'
 
 function Content() {
