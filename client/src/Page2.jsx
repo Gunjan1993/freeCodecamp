@@ -7,7 +7,7 @@ import axios from 'axios'
 function Content() {
   const[courses,setCourses]=useState([])
   const[auth2,setAuth2]=useState(false)
-  axios.defaults.withCredentials=false
+  axios.defaults.withCredentials=true
   useEffect(()=>{
 axios.get('https://freecodecamp-v7nt.onrender.com/content').then(
   result=>{console.log(result)
