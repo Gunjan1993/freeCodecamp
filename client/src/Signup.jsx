@@ -13,7 +13,7 @@ function Signup(){
     const [isSubmit, setIsSubmit] = useState(false);
     const navigate=useNavigate()
     const userReg={name,email,password}
-   axios.defaults.withCredentials=false;
+   axios.defaults.withCredentials=true;
     const handleSubmit=(e)=>{
         setIsSubmit(true);
         e.preventDefault()
