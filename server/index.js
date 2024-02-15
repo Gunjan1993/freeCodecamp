@@ -73,13 +73,15 @@ app.post("/register", (req,res)=>{
         if (user){
             res.json("This email already exits!")
         }else{
-            
+
+          const {name1,email1,password1}=req.body;
+            const token=jwt.sign({email:email1},"jwt-secret-key",{expiresIn:'1d'})
+            res.cookie("token",token)
+             
             EmployeeModel.create(req.body)
             .then(employee=> res.json(employee))
             .catch(err=> res.json(err))
-            const {name1,email1,password1}=req.body;
-            const token=jwt.sign({email:email1},"jwt-secret-key",{expiresIn:'1d'})
-            res.cookie("token",token)
+            
 
         }
     })
