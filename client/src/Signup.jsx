@@ -63,11 +63,11 @@ return(
 
 <h2>Login to freeCodeCamp.org</h2>
 
-{Object.keys(formErrors).length === 0 && isSubmit ? (
+{/* {Object.keys(formErrors).length === 0 && isSubmit ? (
         navigate("/content"))
  
       : (navigate("/register"))
-      }
+      } */}
 <form onSubmit={handleSubmit}> 
     <div className="mb-3">
     <label htmlFor="email">
